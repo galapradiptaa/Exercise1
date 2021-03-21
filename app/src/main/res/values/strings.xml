@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">Sample Constraint Layout</string>
-    <string name="tEmail">Email</string>
-    <string name="tPassword">Password</string>
+    <string name="tEmail">Email : </string>
+    <string name="tPassword">Password : </string>
     <string name="bsignin">Sign-in</string>
+    <string name="tlogin">LOGIN</string>
+    <string name="tData">Data Saya</string>
+    <string name="txemail">Ini hasil Email</string>
+    <string name="txpassword">Ini hasil Password</string>
+    <string name="label2">Login Sukses</string>
 </resources>

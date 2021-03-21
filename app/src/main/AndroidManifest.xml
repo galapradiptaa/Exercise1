@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApp">
         <activity
-            android:name=".MainActivity">
+            android:name=".ActivityKedua"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/label2"></activity>
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
