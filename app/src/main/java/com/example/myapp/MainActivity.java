@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if (usr.equals("") || pwd.equals(""))
                 {
-                     Toast.makeText(MainActivity.this, "Email atau Password haris diisi!", Toast.LENGTH_LONG).show();
+                     Toast.makeText(MainActivity.this, "Email atau Password harus diisi!", Toast.LENGTH_LONG).show();
                 }
                 else
                 {
