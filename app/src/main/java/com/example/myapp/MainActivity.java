@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                         Bundle b = new Bundle();
                         b.putString("a", usr.trim());
                         b.putString("b", pwd.trim());
-                        Intent i = new Intent(getApplicationContext(), ActivityKedua.class);
+                        Intent i = new Intent(getApplicationContext(), Home_Activity.class);
                         i.putExtras(b);
                         startActivity(i);
                     }
