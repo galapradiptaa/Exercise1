@@ -30,15 +30,23 @@ public class DaftarActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (edtNama.getText().toString().isEmpty() ||
-                        edtAlamat.getText().toString().isEmpty() ||
-                        edtEmail.getText().toString().isEmpty() ||
-                        edtPassword.getText().toString().isEmpty() ||
-                        edtrepass.getText().toString().isEmpty())
-                {
-                    Snackbar.make(view, "Seluruh Data Wajib Diisi!", Snackbar.LENGTH_LONG).show();
-                }
-                else
+                    if (edtNama.getText().toString().isEmpty()){
+                    {
+                       Snackbar.make(view, "Nama Tidak Boleh Kosong", Snackbar.LENGTH_LONG).show();
+                    }
+                    if (edtAlamat.getText().toString().isEmpty()) {
+                       Snackbar.make(view, "Alamat Tidak Boleh Kosong", Snackbar.LENGTH_LONG).show();
+                    }
+                    if (edtEmail.getText().toString().isEmpty()) {
+                       Snackbar.make(view, "Email Tidak Boleh Kosong", Snackbar.LENGTH_LONG).show();
+                    }
+                    if (edtPassword.getText().toString().isEmpty())
+                        Snackbar.make(view, "Password Tidak Boleh Kosong", Snackbar.LENGTH_LONG).show();
+                    }
+                    if (edtrepass.getText().toString().isEmpty()) {
+                        Snackbar.make(view, "Re-Password Tidak Boleh Kosong", Snackbar.LENGTH_LONG).show();
+                    }
+
                 {
                     if (edtPassword.getText().toString().equals(edtrepass.getText().toString()))
                     {
@@ -56,6 +64,7 @@ public class DaftarActivity extends AppCompatActivity {
                 }
 
             }
-        });
-    }
+        ;
+    });
+}
 }
